@@ -1,5 +1,5 @@
 [![](https://images.microbadger.com/badges/image/rgielen/httpd-image-proxy.svg)](https://microbadger.com/images/rgielen/httpd-image-proxy "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/rgielen/httpd-image-proxy:16.10.svg)](https://microbadger.com/images/rgielen/httpd-image-proxy:16.10 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/rgielen/httpd-image-proxy:17.10.svg)](https://microbadger.com/images/rgielen/httpd-image-proxy:17.10 "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/rgielen/httpd-image-proxy.svg)](https://microbadger.com/images/rgielen/httpd-image-proxy "Get your own version badge on microbadger.com")
 
 # httpd-image-proxy Docker Image
@@ -15,4 +15,5 @@ You would want to extend the image with suitable config files, it does not make 
 ## Supported Tags an Branches
 
   * `latest` Latest development
+  * `17.10`, `17.10.01` Based on Ubuntu 17.10, certbot PPA 0.21+
   * `16.10`, `16.10.01` Based on Ubuntu 16.10
