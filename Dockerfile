@@ -1,5 +1,5 @@
 FROM rgielen/httpd-image-simple:17.10
-MAINTAINER "Rene Gielen" <rgielen@apache.org>
+MAINTAINER "René Gielen" <rgielen@apache.org>
 
 RUN apt-get update && apt-get -y install openssl software-properties-common \
         && a2enmod ssl rewrite proxy proxy_html proxy_http proxy_ajp deflate headers xml2enc alias \
