@@ -1,9 +1,10 @@
-FROM rgielen/httpd-image-simple:17.10
+FROM rgielen/httpd-image-simple:18.04
 MAINTAINER "René Gielen" <rgielen@apache.org>
 
-RUN apt-get update && apt-get -y install openssl software-properties-common \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssl software-properties-common \
         && a2enmod ssl rewrite proxy proxy_html proxy_http proxy_ajp deflate headers xml2enc alias \
-        && add-apt-repository ppa:certbot/certbot && apt-get update && apt-get -y install certbot \
+        && add-apt-repository ppa:certbot/certbot && apt-get update \
+        && DEBIAN_FRONTEND=noninteractive apt-get -y install certbot \
         && apt-get clean \
         && rm -rf /var/lib/apt/lists/* \
         && rm -rf /tmp/*
